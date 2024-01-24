@@ -28,17 +28,47 @@ const myArr2 = new Array(1,2,3,4)
 
 //slice and splice
 
-console.log("A" , myArr);
+// console.log("A" , myArr);
 
-const myn1 = myArr.slice(1,3)
+// const myn1 = myArr.slice(1,3)
 
-console.log(myn1);
-console.log("B" , myArr);
+// console.log(myn1);
+// console.log("B" , myArr);
 
-const myn2 = myArr.splice(1,3)
-console.log("C" , myArr);
-console.log(myn2);
+// const myn2 = myArr.splice(1,3)
+// console.log("C" , myArr);
+// console.log(myn2);
 
 
 /************************************************** part-2************************************************** */
 
+const marvel_heros = ["thor" , "Ironman" , "spiderman"]
+const dc_heros =["superman" , "flash" , "batman"]
+
+
+// marvel_heros.push(dc_heros) // array kae andar array ban jata hai
+
+// console.log(marvel_heros);
+// console.log(marvel_heros[3]);
+// console.log(marvel_heros[3][1]);
+
+// const allHeros = marvel_heros.concat(dc_heros)
+// console.log(allHeros);
+
+const all_new_Heros =[...marvel_heros,...dc_heros]
+console.log(all_new_Heros); // spreads
+
+const another_array = [1 , 2 , 3 , [4 , 5 , 6] , 7 ,[6 , 7 ,[4 , 5]]]
+
+const real_another_array = another_array.flat(Infinity)
+console.log(real_another_array);
+
+console.log(Array.isArray("Hitesh"))
+console.log(Array.from("Hitesh")) // converts to array
+console.log(Array.from({name : "Romi"})) // unable to convert into an array
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1,score2,score3));
