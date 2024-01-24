@@ -1,1 +1,1 @@
-Object.freeze(JsUser)
+const obj4 = Object.assign({} , obj1 , obj2 , obj6) // {} => target ,and is same as obj4

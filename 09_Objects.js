@@ -35,5 +35,73 @@ JsUser.greeting2 = function(){
 }
 
 
-console.log(JsUser.greeting())
-console.log(JsUser.greeting2())
+// console.log(JsUser.greeting())
+// console.log(JsUser.greeting2())
+
+//*******************************************************************part-2************************************ *//
+
+// const tinderUser = new Object() // singleton obj
+const tinderUser = {}
+
+tinderUser.id = "123abc"
+tinderUser.name = "Sammy"
+tinderUser.isLoggedIn = false
+
+// console.log(tinderUser);
+
+const regularUser = {
+    email : "soejnd@gmail.com",
+    fullName :  {
+        userFullName : {
+            firtsName : "Romi",
+            LastName : "rajput"
+        }
+    }
+}
+
+// console.log(regularUser.fullName.userFullName.LastName);
+
+const obj1 = {1 : "a" , 2 : "b"}
+const obj2 = {3 : "a" , 4 : "b"}
+const obj6 = {5 : "a" , 6 : "b"}
+
+// const obj5 = {obj1 , obj2}
+// const obj3 = Object.assign(obj1 , obj2)
+// console.log(obj3);
+// const obj4 = Object.assign({} , obj1 , obj2 , obj6) // {} => target ,and is same as obj4
+
+
+const obj7 = {...obj1,...obj2,...obj6}
+// console.log(obj7);
+
+
+const users = [
+    {
+        id : 1,
+        email : "djjs@gmail.com"
+    },
+    {
+        id : 2,
+        email : "djjs@gmail.com"
+    },
+    {
+        id : 3,
+        email : "djjs@gmail.com"
+    },
+    {
+        id : 4,
+        email : "djjs@gmail.com"
+    }
+]
+
+users[1].email
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));//IMP
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+
