@@ -95,13 +95,40 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));//IMP
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));//IMP
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+
+//*************************************************************part-3 Destructuring and JSON *//
+
+const course = {
+    courseName: "js in hindi",
+    price : "999",
+    courseInstruct : "Hitesh"
+}
+
+// course.courseInstruct
+
+const {courseInstruct : Instruct} = course //destructuring
+
+// console.log(course.courseInstruct);
+console.log(Instruct);
+
+// {
+//     "name" : "romi",
+//     "coursename" : "js in hindi",
+//     "price" : "free"
+// }
+
+[
+    {},
+    {},
+    {},
+]
 
 

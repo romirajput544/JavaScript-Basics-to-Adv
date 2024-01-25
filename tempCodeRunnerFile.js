@@ -1,1 +1,3 @@
-const obj4 = Object.assign({} , obj1 , obj2 , obj6) // {} => target ,and is same as obj4
+console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));//IMP
